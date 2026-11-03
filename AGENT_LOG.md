@@ -21,3 +21,4 @@ Copy this outline for each entry:
 
 - **Implementation correction:** The real browser test caught malformed option markup that made the one-bedroom filter unavailable. Fixed the closing tag and reran browser verification.
 - **Browser result:** Desktop and phone checks pass for all filters, reset, no overflow, and no JavaScript page errors. Prepared a main-branch upload through the connected GitHub tools; deployment outcome is recorded in `agent.md` after verification.
+- **Publication confirmed:** Implementation commit `6190b1973c1344f5079235a3f582e893d97fea44`; GitHub Pages run `41699996550` succeeded. Public-site browser checks passed. The About homepage already matches https://phoebecyang.github.io/campustown_home_sale/. Local clone synchronized. See `agent.md` for detailed evidence.

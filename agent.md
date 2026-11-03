@@ -35,3 +35,13 @@ The browser test caught a malformed HTML closing tag that removed the one-bedroo
 - Browser checks passed at desktop (1440 px) and phone (390 px) widths: every bedroom option, reset, visible comparison table, no horizontal overflow, and no JavaScript page errors. Desktop screenshot visually inspected; a phone viewport screenshot was captured after layout settled. Fixed singular “price outlier” wording during review.
 - Git whitespace check passed. Confirmed none of the five original dataset files or the workflow was modified.
 - Prepared one GitHub commit containing the page, styles, browser logic, derived subset, reproducibility script, independent checks, README, and both logs. Upload targets `main`, which triggers the existing GitHub Pages workflow. Deployment result will be appended after GitHub reports its outcome.
+
+### Publication confirmed
+
+- Uploaded implementation commit `6190b1973c1344f5079235a3f582e893d97fea44` to `main` using the connected GitHub API, without force-pushing.
+- GitHub Actions run `41699996550` completed successfully for that commit.
+- Public URL: https://phoebecyang.github.io/campustown_home_sale/
+- Repeated the desktop/phone, all-bedroom-filter, reset, no-overflow, and no-JavaScript-error checks against the public URL in a fresh unsigned-in Chrome session: all passed.
+- Confirmed repository About homepage already equals the public URL; no settings change was needed.
+- Fetched the published commit and synchronized the existing Mac clone. Working files matched the uploaded commit, and Git reported a clean working tree before appending this final evidence.
+- This final documentation commit records publication results; it does not alter the tested site or dataset.
