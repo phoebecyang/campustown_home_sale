@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<!-- A placeholder from the Campus Comps template. Replace this file with your site's first page. -->
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under construction</title>
-  <!-- An empty icon, so the browser doesn't log an error looking for favicon.ico -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore historical home sales in Champaign and Urbana: compare prices, home sizes, and time on market around one shared campus.">
+  <title>Two Cities, One Campus · Champaign vs. Urbana</title>
   <link rel="icon" href="data:,">
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-      font-family: system-ui, sans-serif;
-      line-height: 1.5;
-    }
-    footer { margin-top: 3rem; font-size: 0.875rem; opacity: 0.75; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This site is under construction</h1>
-    <p>It will show findings from the College-town home sales dataset.</p>
-  </main>
-  <footer>
-    <p>Data: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p>
-  </footer>
+<a class="skip" href="#comparison">Skip to comparison</a>
+<header class="navigation"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">⌂</span> CAMPUS COMPS</a><nav aria-label="Main"><a href="#comparison">Compare the cities</a><a href="#methods">Behind the numbers ↗</a></nav></header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">CHAMPAIGN + URBANA, ILLINOIS</p><h1>Two cities.<br>One campus.<br><em>A different market?</em></h1><p class="intro">A shared university. Two places to call home. Explore how home sale prices, space, and selling times compare on either side of campus.</p><a class="primary" href="#comparison">Explore the comparison <span aria-hidden="true">↓</span></a><p class="hero-note">Completed home sales · Data collected March 2026</p></div>
+    <div class="hero-art" aria-hidden="true"><div class="art-heading">THE TWIN CITIES <span>ILLINOIS</span></div><div class="skyline"><div class="sun"></div><div class="house orange"><div class="roof"></div><div class="windows"><i></i><i></i><i></i><i></i></div><div class="door"></div></div><div class="campus"><div class="spire"></div><div class="tower"><i></i></div><div class="campus-base"></div></div><div class="house blue"><div class="roof"></div><div class="windows"><i></i><i></i><i></i><i></i></div><div class="door"></div></div><div class="ground"></div></div><div class="art-labels"><span><b class="dot champaign"></b>Champaign</span><span class="campus-label">UIUC</span><span><b class="dot urbana"></b>Urbana</span></div><p class="art-caption">Two communities. A closer look at the data.</p></div>
+  </section>
+  <section id="comparison" class="comparison">
+    <div class="section-heading"><div><p class="eyebrow">THE LOCAL PICTURE</p><h2>Compare your kind of home.</h2></div><div class="filter"><label for="bedrooms">Bedrooms</label><select id="bedrooms" disabled><option value="all">All bedrooms</option><option value="1">1 bedroom</option><option value="2">2 bedrooms</option><option value="3">3 bedrooms</option><option value="4">4 bedrooms</option><option value="5">5+ bedrooms</option></select><button id="reset" type="button" disabled>Reset</button></div></div>
+    <p class="scope" id="scope" role="status" aria-live="polite">Loading the local sales data…</p>
+    <noscript><p class="error">Enable JavaScript to explore the comparison. You can also download the source data below.</p></noscript>
+    <div id="results" hidden>
+      <div class="city-cards" id="cards"></div>
+      <aside class="takeaway" id="takeaway" aria-live="polite"></aside>
+      <div class="chart-grid"><article class="panel"><p class="eyebrow">THE PRICE OF A HOME</p><h3>What did homes sell for?</h3><p>Median sale price · common scale starting at $0</p><div id="price-chart" class="bar-chart"></div></article><article class="panel"><p class="eyebrow">THE SPACE YOU GET</p><h3>How big were the homes?</h3><p>Median living area · common scale starting at 0 sq ft</p><div id="size-chart" class="bar-chart"></div></article></div>
+      <article class="panel detail-panel"><div><p class="eyebrow">A LITTLE MORE CONTEXT</p><h3>Look beyond the sticker price.</h3><p>Each metric uses the records available for that measure.</p></div><div class="table-wrap"><table><caption class="sr-only">City comparison with sample sizes for the selected bedrooms</caption><thead><tr><th scope="col">Measure</th><th scope="col">Champaign</th><th scope="col">Urbana</th></tr></thead><tbody id="details"></tbody></table></div></article>
+      <p class="caution">These are historical sales, not homes currently for sale. City medians reflect different mixes of homes; they do not measure the price difference for identical properties.</p>
+    </div>
+  </section>
+  <section id="methods" class="methods"><div><p class="eyebrow">BEHIND THE NUMBERS</p><h2>Clear rules.<br>Honest comparisons.</h2><p>Every figure comes from the provided College-town home sales dataset. Here is how we use it.</p><a href="docs/data_description_sheet.md">Read the data description ↗</a></div><div class="method-list"><details open><summary>Which sales are included?</summary><p>Only records labeled Champaign or Urbana in Illinois. Sale prices must be between $10,000 and $5,000,000 inclusive, to limit implausible price records. The bedroom filter applies to every comparison. No records are removed for sharing an address; listing_id identifies each sale. Date coverage and exclusion counts are computed from the data above.</p></details><details><summary>How are the metrics calculated?</summary><p>Medians are the middle value, or the average of the two middle values. Price per square foot is the median of each sale's price divided by its living area, not the ratio of city medians. Living-area metrics use only positive, reported square footage. Days on market is contract date minus list date; both must be present and the interval nonnegative. Same-day contracts count as zero. Sample sizes appear beside each metric.</p></details><details><summary>What should I keep in mind?</summary><p>Missing listing dates are not random, so selling times describe only sales with usable dates. The source has not been verified against county records. Property type is unreliable and is not used. Lot size, bathrooms, taxes, and assessed value are not used because of documented anomalies. No claim about affordability, current prices, or the cause of a city difference is made.</p></details></div></section>
+</main>
+<footer><div class="footer-top"><a class="brand" href="#">CAMPUS COMPS</a><span>Made for a closer look at home.</span></div><p>Source: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p><div class="footer-links"><a href="data/college_town_home_sales.csv">Download original CSV</a><a href="https://github.com/phoebecyang/campustown_home_sale">GitHub repository ↗</a><a href="agent.md">Agent session log ↗</a></div></footer>
 </body>
 </html>

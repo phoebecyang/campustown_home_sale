@@ -1,0 +1,122 @@
+{
+  "all": {
+    "Champaign": {
+      "count": 2285,
+      "price": 240000,
+      "area": 1645,
+      "ppsf": 149.68487394957984,
+      "areaCount": 2275,
+      "days": 7.0,
+      "daysCount": 1784
+    },
+    "Urbana": {
+      "count": 1131,
+      "price": 229900,
+      "area": 1550.5,
+      "ppsf": 144.34885649958525,
+      "areaCount": 1128,
+      "days": 8.0,
+      "daysCount": 872
+    }
+  },
+  "1": {
+    "Champaign": {
+      "count": 12,
+      "price": 111250.0,
+      "area": 708.5,
+      "ppsf": 152.28632478632477,
+      "areaCount": 12,
+      "days": 8.0,
+      "daysCount": 8
+    },
+    "Urbana": {
+      "count": 5,
+      "price": 82500,
+      "area": 784,
+      "ppsf": 101.91326530612245,
+      "areaCount": 5,
+      "days": 6.0,
+      "daysCount": 5
+    }
+  },
+  "2": {
+    "Champaign": {
+      "count": 282,
+      "price": 150000.0,
+      "area": 1003.5,
+      "ppsf": 149.02255639097746,
+      "areaCount": 280,
+      "days": 5.0,
+      "daysCount": 201
+    },
+    "Urbana": {
+      "count": 152,
+      "price": 135500.0,
+      "area": 963,
+      "ppsf": 139.16666666666666,
+      "areaCount": 151,
+      "days": 6.0,
+      "daysCount": 108
+    }
+  },
+  "3": {
+    "Champaign": {
+      "count": 1106,
+      "price": 215000.0,
+      "area": 1440,
+      "ppsf": 148.8095238095238,
+      "areaCount": 1101,
+      "days": 6.0,
+      "daysCount": 847
+    },
+    "Urbana": {
+      "count": 638,
+      "price": 225000.0,
+      "area": 1482,
+      "ppsf": 149.02143522833177,
+      "areaCount": 637,
+      "days": 8.0,
+      "daysCount": 483
+    }
+  },
+  "4": {
+    "Champaign": {
+      "count": 628,
+      "price": 337000.0,
+      "area": 2138.5,
+      "ppsf": 147.73177768723366,
+      "areaCount": 626,
+      "days": 8.0,
+      "daysCount": 517
+    },
+    "Urbana": {
+      "count": 263,
+      "price": 270000,
+      "area": 1998,
+      "ppsf": 136.94461351186854,
+      "areaCount": 263,
+      "days": 9.0,
+      "daysCount": 219
+    }
+  },
+  "5": {
+    "Champaign": {
+      "count": 257,
+      "price": 485000,
+      "area": 2784.5,
+      "ppsf": 170.88794926004226,
+      "areaCount": 256,
+      "days": 19.0,
+      "daysCount": 211
+    },
+    "Urbana": {
+      "count": 73,
+      "price": 386100,
+      "area": 2488.0,
+      "ppsf": 137.9630527279582,
+      "areaCount": 72,
+      "days": 14.0,
+      "daysCount": 57
+    }
+  }
+}
