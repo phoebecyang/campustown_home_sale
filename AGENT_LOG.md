@@ -19,6 +19,6 @@ Add a dated entry each time you work with your AI coding agent, with the newest 
 
 ## 2026-11-04: Strengthen the city comparison colors
 
-- **Asked:** "I prefer to have the coloring of the comparison of Urbana and Champaign to be blue and oraneg"
+- **Asked:** "I prefer to have the coloring of the comparison of Urbana and Champaign to be blue and orange"
 - **Agent produced:** A consistent city color system: Champaign is orange and Urbana is blue in the legend, cards, headline prices, chart labels and bars, and comparison-table columns.
 - **Checked or changed:** Kept city names next to all color cues. All 84 independent metric comparisons passed. Desktop and phone browser checks passed for every bedroom filter, reset, no overflow, and no JavaScript errors. The desktop appearance was visually inspected.
