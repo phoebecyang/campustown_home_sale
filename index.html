@@ -7,6 +7,7 @@
   <title>Two Cities, One Campus · Champaign vs. Urbana</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="city-colors.css">
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -20,6 +21,7 @@
   <section id="comparison" class="comparison">
     <div class="section-heading"><div><p class="eyebrow">THE LOCAL PICTURE</p><h2>Compare your kind of home.</h2></div><div class="filter"><label for="bedrooms">Bedrooms</label><select id="bedrooms" disabled><option value="all">All bedrooms</option><option value="1">1 bedroom</option><option value="2">2 bedrooms</option><option value="3">3 bedrooms</option><option value="4">4 bedrooms</option><option value="5">5+ bedrooms</option></select><button id="reset" type="button" disabled>Reset</button></div></div>
     <p class="scope" id="scope" role="status" aria-live="polite">Loading the local sales data…</p>
+    <div class="city-legend" aria-label="Comparison colors"><span><b class="dot champaign"></b>Champaign — orange</span><span><b class="dot urbana"></b>Urbana — blue</span></div>
     <noscript><p class="error">Enable JavaScript to explore the comparison. You can also download the source data below.</p></noscript>
     <div id="results" hidden>
       <div class="city-cards" id="cards"></div>

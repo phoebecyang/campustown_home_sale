@@ -1,0 +1,90 @@
+/* A consistent visual key for the city comparison. */
+:root {
+  --orange: #c24c22;
+  --orange-soft: #fff3eb;
+  --blue: #21658a;
+  --blue-soft: #edf7fc;
+}
+
+.city-legend {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin: -10px 0 24px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.city-legend .dot {
+  width: 9px;
+  height: 9px;
+}
+
+.champaign-card {
+  background: var(--orange-soft);
+  border-color: #edc7b5;
+}
+
+.urbana-card {
+  background: var(--blue-soft);
+  border-color: #bdd9e7;
+}
+
+.champaign-card .card-heading h3,
+.champaign-card .price {
+  color: var(--orange);
+}
+
+.urbana-card .card-heading h3,
+.urbana-card .price {
+  color: var(--blue);
+}
+
+.bar-label span {
+  font-weight: 800;
+}
+
+.champaign-row .bar-label span {
+  color: var(--orange);
+}
+
+.urbana-row .bar-label span {
+  color: var(--blue);
+}
+
+.detail-panel thead th:nth-child(2),
+.detail-panel tbody td:nth-child(2) {
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+
+.detail-panel thead th:nth-child(3),
+.detail-panel tbody td:nth-child(3) {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.detail-panel thead th:nth-child(2),
+.detail-panel thead th:nth-child(3),
+.detail-panel tbody td:nth-child(2),
+.detail-panel tbody td:nth-child(3) {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+@media (max-width: 600px) {
+  .city-legend {
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .detail-panel thead th:nth-child(2),
+  .detail-panel thead th:nth-child(3),
+  .detail-panel tbody td:nth-child(2),
+  .detail-panel tbody td:nth-child(3) {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}

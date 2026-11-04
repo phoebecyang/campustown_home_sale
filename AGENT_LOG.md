@@ -16,3 +16,9 @@ Add a dated entry each time you work with your AI coding agent, with the newest 
 - **Implementation correction:** The real browser test caught malformed option markup that made the one-bedroom filter unavailable. Fixed the closing tag and reran browser verification.
 - **Browser result:** Desktop and phone checks pass for all filters, reset, no overflow, and no JavaScript page errors. Prepared a main-branch upload through the connected GitHub tools; deployment outcome is recorded in `agent.md` after verification.
 - **Publication confirmed:** Implementation commit `6190b1973c1344f5079235a3f582e893d97fea44`; GitHub Pages run `41699996550` succeeded. Public-site browser checks passed. The About homepage already matches https://phoebecyang.github.io/campustown_home_sale/. Local clone synchronized. See `agent.md` for detailed evidence.
+
+## 2026-11-04: Strengthen the city comparison colors
+
+- **Asked:** "I prefer to have the coloring of the comparison of Urbana and Champaign to be blue and oraneg"
+- **Agent produced:** A consistent city color system: Champaign is orange and Urbana is blue in the legend, cards, headline prices, chart labels and bars, and comparison-table columns.
+- **Checked or changed:** Kept city names next to all color cues. All 84 independent metric comparisons passed. Desktop and phone browser checks passed for every bedroom filter, reset, no overflow, and no JavaScript errors. The desktop appearance was visually inspected.

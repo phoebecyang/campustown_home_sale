@@ -45,3 +45,11 @@ The browser test caught a malformed HTML closing tag that removed the one-bedroo
 - Confirmed repository About homepage already equals the public URL; no settings change was needed.
 - Fetched the published commit and synchronized the existing Mac clone. Working files matched the uploaded commit, and Git reported a clean working tree before appending this final evidence.
 - This final documentation commit records publication results; it does not alter the tested site or dataset.
+
+## 2026-11-04 — Strengthen Champaign and Urbana colors
+
+- **Asked:** "I prefer to have the coloring of the comparison of Urbana and Champaign to be blue and oraneg"
+- Made Champaign consistently orange and Urbana consistently blue across the comparison legend, city cards, city names, headline prices, chart labels and bars, and table columns.
+- Added soft orange and blue card and table backgrounds so the two cities are distinguishable without overwhelming the data.
+- Kept written city labels alongside every color cue for accessibility and clarity.
+- Reran all 84 independent metric checks; all passed. Browser tests passed at desktop and phone widths for every bedroom filter, reset behavior, horizontal overflow, and JavaScript errors. Visually inspected the desktop result.

@@ -18,7 +18,7 @@ function selectRows(rows, bedrooms) {
 }
 function bars(id, summaries, key, format) {
   const max = Math.max(...summaries.map(s => s[key] || 0));
-  document.getElementById(id).innerHTML = summaries.map((s,i) => `<div class="bar-row"><div class="bar-label"><span>${CITIES[i]}</span><strong>${format(s[key])}</strong></div><div class="track" aria-hidden="true"><div class="bar ${CITIES[i].toLowerCase()}" style="width:${max && s[key] !== null ? 100*s[key]/max : 0}%"></div></div><div class="sample">${number(key === 'area' ? s.areaCount : s.count)} sales with usable data</div></div>`).join('');
+  document.getElementById(id).innerHTML = summaries.map((s,i) => `<div class="bar-row ${CITIES[i].toLowerCase()}-row"><div class="bar-label"><span>${CITIES[i]}</span><strong>${format(s[key])}</strong></div><div class="track" aria-hidden="true"><div class="bar ${CITIES[i].toLowerCase()}" style="width:${max && s[key] !== null ? 100*s[key]/max : 0}%"></div></div><div class="sample">${number(key === 'area' ? s.areaCount : s.count)} sales with usable data</div></div>`).join('');
 }
 let sourceRows = [];
 function render() {
