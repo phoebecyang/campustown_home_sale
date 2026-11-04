@@ -2,20 +2,14 @@
 
 Add a dated entry each time you work with your AI coding agent, with the newest entry at the bottom. Each entry records what you asked the agent, what it produced, and what you checked or changed. Paste your key prompts in exactly as you typed them. Include at least one time the agent got something wrong, and how you caught it.
 
-Copy this outline for each entry:
 
-```markdown
-## YYYY-MM-DD: What you worked on
-
-- **Asked:** "Paste your prompt here."
-- **Agent produced:** What it made or changed.
-- **Checked or changed:** How you checked it, and what you fixed.
-```
-
-## 2026-11-03: Build Champaign vs. Urbana comparison
+## 2026-11-03: Build Champaign vs. Urbana Comparison Website
 
 - **Asked:** "I choose champaign vs urbana"
-- **Asked:** "I am suppose to build the website with a coding ai agent, can you build the website from here through github and log every step inside the agent.md"
+- **Asked:** "I am suppose to build the website with a coding ai agent, can you build the website through vscode and push it onto github"
+- **Asked:**  " I want the website to be interactive, such as showing the differences between 1 bedroom, 2 bedroom, 3 bedroom and 4 bedroom".
+
+
 - **Agent produced:** “Two Cities, One Campus,” using plain HTML/CSS/JavaScript; bedroom filters; city cards; price and size charts; per-metric sample counts; methods; reproducible subset script; independent SQLite checks; completed README. Detailed steps and publication evidence are in `agent.md`.
 - **Checked or changed:** The agent independently calculated metrics from SQLite and compared them to the browser functions: 84 matches across every bedroom filter, plus empty/missing-data checks. Original dataset files unchanged. The initial browser test wrongly assumed a bundled headless browser executable existed; its missing-executable error caught this, and the agent switched to installed Chrome. The student has not yet personally reviewed the output.
 
