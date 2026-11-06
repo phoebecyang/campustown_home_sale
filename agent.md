@@ -53,3 +53,10 @@ The browser test caught a malformed HTML closing tag that removed the one-bedroo
 - Added soft orange and blue card and table backgrounds so the two cities are distinguishable without overwhelming the data.
 - Kept written city labels alongside every color cue for accessibility and clarity.
 - Reran all 84 independent metric checks; all passed. Browser tests passed at desktop and phone widths for every bedroom filter, reset behavior, horizontal overflow, and JavaScript errors. Visually inspected the desktop result.
+
+## 2026-11-06 — Organize the illustration heading
+
+- **Asked:** "The picture in the first page of the website seems a bit off, since the two words: the twin city and illinois is sort of out of bound, make the words look more organized"
+- Replaced the widely separated edge labels with a centered two-line heading inside the rounded illustration: “The Twin Cities” and “Champaign · Urbana · Illinois.”
+- Added a constrained inner width, balanced padding, and responsive type sizes so the heading stays within the curved frame.
+- Verified the heading's bounding box stays inside the illustration at 1440-pixel desktop and 390-pixel phone widths. Confirmed no horizontal overflow or JavaScript errors and visually inspected both screenshots.

@@ -22,3 +22,9 @@ Add a dated entry each time you work with your AI coding agent, with the newest 
 - **Asked:** "I prefer to have the coloring of the comparison of Urbana and Champaign to be blue and orange"
 - **Agent produced:** A consistent city color system: Champaign is orange and Urbana is blue in the legend, cards, headline prices, chart labels and bars, and comparison-table columns.
 - **Checked or changed:** Kept city names next to all color cues. All 84 independent metric comparisons passed. Desktop and phone browser checks passed for every bedroom filter, reset, no overflow, and no JavaScript errors. The desktop appearance was visually inspected.
+
+## 2026-11-06: Organize the illustration heading
+
+- **Asked:** "The picture in the first page of the website seems a bit off, since the two words: the twin city and illinois is sort of out of bound, make the words look more organized"
+- **Agent produced:** A centered, two-line illustration heading reading “The Twin Cities” and “Champaign · Urbana · Illinois,” with responsive spacing and type sizes.
+- **Checked or changed:** Automated desktop and phone checks confirmed the heading stays inside the rounded illustration. No horizontal overflow or JavaScript errors were found. Both screenshots were visually inspected.
