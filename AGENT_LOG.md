@@ -28,3 +28,4 @@ Add a dated entry each time you work with your AI coding agent, with the newest 
 - **Asked:** "The picture in the first page of the website seems a bit off, since the two words: the twin city and illinois is sort of out of bound, make the words look more organized"
 - **Agent produced:** A centered, two-line illustration heading reading “The Twin Cities” and “Champaign · Urbana · Illinois,” with responsive spacing and type sizes.
 - **Checked or changed:** Automated desktop and phone checks confirmed the heading stays inside the rounded illustration. No horizontal overflow or JavaScript errors were found. Both screenshots were visually inspected.
+- **Publication correction:** The live page initially combined the new heading text with the browser's cached older stylesheet, so it still appeared misaligned. A live screenshot caught the problem. Added a version to the stylesheet URL to force browsers to load the centered layout.

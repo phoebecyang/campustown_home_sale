@@ -60,3 +60,4 @@ The browser test caught a malformed HTML closing tag that removed the one-bedroo
 - Replaced the widely separated edge labels with a centered two-line heading inside the rounded illustration: “The Twin Cities” and “Champaign · Urbana · Illinois.”
 - Added a constrained inner width, balanced padding, and responsive type sizes so the heading stays within the curved frame.
 - Verified the heading's bounding box stays inside the illustration at 1440-pixel desktop and 390-pixel phone widths. Confirmed no horizontal overflow or JavaScript errors and visually inspected both screenshots.
+- **Publication correction:** The first live deployment delivered the new HTML while a browser still reused the previous `city-colors.css`, leaving the new words side by side. A live screenshot caught the stale layout. Added a version query to the stylesheet URL so browsers request the updated centered styles immediately.
